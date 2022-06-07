@@ -1939,6 +1939,8 @@ static int hls_read_header(AVFormatContext *s)
         if (ret < 0)
             goto fail;
 
+        av_log(NULL, AV_LOG_ERROR, "playlist inputformat is %s",pls->ctx->iformat->name);
+
         if (pls->id3_deferred_extra && pls->ctx->nb_streams == 1) {
             ff_id3v2_parse_apic(pls->ctx, &pls->id3_deferred_extra);
             avformat_queue_attached_pictures(pls->ctx);

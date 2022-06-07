@@ -2273,7 +2273,7 @@
 @set config-image-pgmyuv-pipe-demuxer yes
 @set config-image-pgm-pipe-demuxer yes
 @set config-image-pictor-pipe-demuxer yes
-@set config-image-png-pipe-demuxer yes
+@c @set config-image-png-pipe-demuxer no
 @set config-image-ppm-pipe-demuxer yes
 @set config-image-psd-pipe-demuxer yes
 @set config-image-qdraw-pipe-demuxer yes

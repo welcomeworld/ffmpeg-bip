@@ -30,6 +30,7 @@ make clean
 	--disable-ffprobe \
     --disable-symver \
     --disable-programs \
+    --disable-demuxer=image_png_pipe \
     --target-os=android \
     --arch=$ARCH \
     --cpu=$CPU \
@@ -46,6 +47,7 @@ make clean
 make -j10
 make install
 echo "The Compilation of FFmpeg for $CPU is completed"
+cp $LIB_DIR/* /PublicData/ExternalStudioProjects/BIPPlayer/bipplayer/libs/$OUTPUT_FOLDER/
 }
 
 # armv8-a

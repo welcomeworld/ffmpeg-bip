@@ -283,7 +283,6 @@ static const AVInputFormat * const demuxer_list[] = {
     &ff_image_pgmyuv_pipe_demuxer,
     &ff_image_pgm_pipe_demuxer,
     &ff_image_pictor_pipe_demuxer,
-    &ff_image_png_pipe_demuxer,
     &ff_image_ppm_pipe_demuxer,
     &ff_image_psd_pipe_demuxer,
     &ff_image_qdraw_pipe_demuxer,
